@@ -31,6 +31,9 @@ XML output
 <img width="108" height="242.4" alt="Screenshot_20250724_223150" src="https://github.com/user-attachments/assets/efedffb1-d496-465c-ae0a-6712343f26c3" /> 
 Error screen
 
+## Seqeunce Diagram
+<img width="1030" height="644" alt="seq_uml" src="https://github.com/user-attachments/assets/77a1f575-e8ee-4a6b-a6f9-2db3b48d86a3" />
+
 
 ## Technical Implementation
 
