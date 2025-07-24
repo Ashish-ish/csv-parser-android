@@ -19,8 +19,9 @@ import kotlinx.serialization.json.Json
 import nl.adaptivity.xmlutil.serialization.XML
 import java.io.IOException
 
-class MainViewModel : ViewModel() {
-    private val csvParser = CsvParser()
+class MainViewModel(
+    private val csvParser: CsvParser = CsvParser()
+) : ViewModel() {
     private val _uiState = MutableStateFlow<ParseState>(ParseState.Idle)
     val uiState: StateFlow<ParseState> = _uiState.asStateFlow()
 
