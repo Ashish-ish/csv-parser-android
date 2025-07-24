@@ -18,6 +18,14 @@ The application addresses several common needs:
 3. Demonstrating modern Android development practices
 4. Implementing a clean architecture with clear separation of concerns
 
+## Working Screenshots
+
+![img.png](img.png)
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
+![img_4.png](img_4.png)
+
 ## Technical Implementation
 
 ### Architecture
@@ -94,3 +102,4 @@ The app uses `ParseState` sealed class for handling different UI states:
 - Implements custom CSV parser
 - Uses Kotlin Serialization for JSON/XML conversion
 - Maintains data integrity during format switching
+
