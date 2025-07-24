@@ -1,4 +1,4 @@
-<img width="1080" height="2424" alt="Screenshot_20250724_223125" src="https://github.com/user-attachments/assets/b87096ca-990d-4d2b-b873-361ca1245cf1" /># CSV Parser Android
+## CSV Parser Android
 
 A modern Android application that parses CSV files and converts them into structured JSON or XML output, built with Jetpack Compose and following MVVM architecture.
 
@@ -20,11 +20,11 @@ The application addresses several common needs:
 
 ## Working Screenshots
 
-<img width="108" height="242.4" alt="Screenshot_20250724_223021" src="https://github.com/user-attachments/assets/201c3324-1caa-4520-a337-91c43cb17891" />
-<img width="108" height="242.4" alt="Screenshot_20250724_223044" src="https://github.com/user-attachments/assets/f6d7328b-ecb3-49db-b365-326ddd7dc120" />
-<img width="108" height="242.4" alt="Screenshot_20250724_223125" src="https://github.com/user-attachments/assets/c5402468-5cb2-490d-aae9-16de6b854897" />
-<img width="108" height="242.4" alt="Screenshot_20250724_223134" src="https://github.com/user-attachments/assets/ac1d5371-0a32-49cc-9850-785a09f7c4b4" />
-<img width="108" height="242.4" alt="Screenshot_20250724_223150" src="https://github.com/user-attachments/assets/efedffb1-d496-465c-ae0a-6712343f26c3" />
+<img width="108" height="242.4" alt="Screenshot_20250724_223021" src="https://github.com/user-attachments/assets/201c3324-1caa-4520-a337-91c43cb17891" /> Initial Screen
+<img width="108" height="242.4" alt="Screenshot_20250724_223044" src="https://github.com/user-attachments/assets/f6d7328b-ecb3-49db-b365-326ddd7dc120" /> File Picker
+<img width="108" height="242.4" alt="Screenshot_20250724_223125" src="https://github.com/user-attachments/assets/c5402468-5cb2-490d-aae9-16de6b854897" /> JSON ouput
+<img width="108" height="242.4" alt="Screenshot_20250724_223134" src="https://github.com/user-attachments/assets/ac1d5371-0a32-49cc-9850-785a09f7c4b4" /> XML output
+<img width="108" height="242.4" alt="Screenshot_20250724_223150" src="https://github.com/user-attachments/assets/efedffb1-d496-465c-ae0a-6712343f26c3" /> Error screen
 
 
 ## Technical Implementation
