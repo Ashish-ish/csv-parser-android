@@ -1,0 +1,44 @@
+@startuml CSV Parser Android Flow
+
+actor User
+participant "MainActivity\n(Compose UI)" as UI
+participant MainViewModel
+participant CsvParser
+participant "ContentResolver" as CR
+participant "Kotlin\nSerialization" as KS
+
+== File Selection & Processing ==
+User -> UI: Select CSV File
+UI -> CR: Launch SAF File Picker
+CR --> UI: Return Selected File URI
+UI -> MainViewModel: processFile(uri, contentResolver, format)
+activate MainViewModel
+
+MainViewModel -> CR: openInputStream()
+CR --> MainViewModel: InputStream
+MainViewModel -> CsvParser: parse(content)
+activate CsvParser
+CsvParser --> MainViewModel: DeviceReport
+deactivate CsvParser
+
+MainViewModel -> KS: Generate Output\n(JSON/XML)
+KS --> MainViewModel: Formatted String
+MainViewModel --> UI: Update UI State\n(ParseState.Success)
+deactivate MainViewModel
+
+== Format Switching ==
+User -> UI: Change Format
+UI -> MainViewModel: regenerateOutput(newFormat)
+activate MainViewModel
+MainViewModel -> KS: Generate New Output
+KS --> MainViewModel: Formatted String
+MainViewModel --> UI: Update UI State
+deactivate MainViewModel
+
+== Error Handling ==
+group Error Scenarios
+    MainViewModel -> UI: ParseState.Error
+    UI --> User: Show Error Message
+end
+
+@enduml
